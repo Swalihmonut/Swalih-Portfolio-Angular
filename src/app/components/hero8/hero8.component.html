@@ -1,0 +1,71 @@
+<div class="hero8-header26 thq-section-padding">
+  <div class="hero8-max-width thq-section-max-width thq-flex-column">
+    <div class="hero8-column">
+      <div class="hero8-content">
+        <h1 class="hero8-text1 thq-heading-1">
+          <ng-container>
+            <ng-template #defaultHeading1>
+              <div class="hero8-fragment4">
+                <span class="hero8-text8">
+                  Welcome to the World of Life Sciences Manufacturing Analysis
+                </span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="heading1 ? heading1 : defaultHeading1"
+            ></ng-container>
+          </ng-container>
+        </h1>
+        <p class="hero8-text2 thq-body-large">
+          <ng-container>
+            <ng-template #defaultContent1>
+              <div class="hero8-fragment2">
+                <span class="hero8-text6">
+                  Showcasing expertise in BI tools, Python, compliance, and more
+                </span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+            ></ng-container>
+          </ng-container>
+        </p>
+        <div class="hero8-actions">
+          <button class="thq-button-filled hero8-button1">
+            <span class="thq-body-small">
+              <ng-container>
+                <ng-template #defaultAction1>
+                  <div class="hero8-fragment1">
+                    <span class="hero8-text5">Learn More</span>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="action1 ? action1 : defaultAction1"
+                ></ng-container>
+              </ng-container>
+            </span>
+          </button>
+          <button class="thq-button-outline hero8-button2">
+            <span class="thq-body-small">
+              <ng-container>
+                <ng-template #defaultAction2>
+                  <div class="hero8-fragment3">
+                    <span class="hero8-text7">Explore Services</span>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="action2 ? action2 : defaultAction2"
+                ></ng-container>
+              </ng-container>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <img
+      [attr.alt]="image1Alt"
+      [attr.src]="image1Src"
+      class="thq-img-ratio-16-9"
+    />
+  </div>
+</div>

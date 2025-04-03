@@ -1,0 +1,123 @@
+<div class="contact7-container1 thq-section-padding">
+  <div class="contact7-max-width thq-section-max-width">
+    <div class="contact7-content1 thq-flex-row">
+      <div class="contact7-content2">
+        <h2 class="thq-heading-2">
+          <ng-container>
+            <ng-template #defaultHeading1>
+              <div class="contact7-fragment4">
+                <span class="contact7-text19">Contact Us</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="heading1 ? heading1 : defaultHeading1"
+            ></ng-container>
+          </ng-container>
+        </h2>
+        <p class="thq-body-large">
+          <ng-container>
+            <ng-template #defaultContent1>
+              <div class="contact7-fragment6">
+                <span class="contact7-text21">
+                  businessanalyst@lifesciencesmanufacturing.com
+                </span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+            ></ng-container>
+          </ng-container>
+        </p>
+      </div>
+    </div>
+    <div class="contact7-content3 thq-flex-row">
+      <div class="contact7-container2">
+        <img
+          [attr.alt]="location1ImgAlt"
+          [attr.src]="location1ImgSrc"
+          class="contact7-image1 thq-img-ratio-16-9"
+        />
+        <h3 class="contact7-text12 thq-heading-3">
+          <ng-container>
+            <ng-template #defaultLocation1>
+              <div class="contact7-fragment2">
+                <span class="contact7-text17">Email</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="location1 ? location1 : defaultLocation1"
+            ></ng-container>
+          </ng-container>
+        </h3>
+        <p class="thq-body-large">
+          <ng-container>
+            <ng-template #defaultLocation1Description>
+              <div class="contact7-fragment3">
+                <span class="contact7-text18">
+                  Reach out to us via email for inquiries or to schedule a
+                  consultation.
+                </span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="location1Description ? location1Description : defaultLocation1Description"
+            ></ng-container>
+          </ng-container>
+        </p>
+        <div class="contact7-container3">
+          <a
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="thq-button-flat thq-body-small"
+          >
+            Get directions
+          </a>
+        </div>
+      </div>
+      <div class="contact7-container4">
+        <img
+          [attr.alt]="location2ImgAlt"
+          [attr.src]="location2ImgSrc"
+          class="contact7-image2 thq-img-ratio-16-9"
+        />
+        <h3 class="contact7-text14 thq-heading-3">
+          <ng-container>
+            <ng-template #defaultLocation2>
+              <div class="contact7-fragment5">
+                <span class="contact7-text20">Phone</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="location2 ? location2 : defaultLocation2"
+            ></ng-container>
+          </ng-container>
+        </h3>
+        <p class="thq-body-large">
+          <ng-container>
+            <ng-template #defaultLocation2Description>
+              <div class="contact7-fragment1">
+                <span class="contact7-text16">
+                  Give us a call during business hours for immediate assistance.
+                </span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="location2Description ? location2Description : defaultLocation2Description"
+            ></ng-container>
+          </ng-container>
+        </p>
+        <div class="contact7-container5">
+          <a
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="thq-button-flat thq-body-small"
+          >
+            Get directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

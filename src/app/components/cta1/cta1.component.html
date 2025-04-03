@@ -1,0 +1,65 @@
+<div class="cta1-container thq-section-padding">
+  <div class="cta1-max-width thq-section-max-width">
+    <div class="cta1-content">
+      <h2 class="cta1-heading1 thq-heading-2">
+        <ng-container>
+          <ng-template #defaultHeading1>
+            <div class="cta1-fragment4">
+              <span class="cta1-text4">
+                Unlock the Power of Data in Life Sciences Manufacturing
+              </span>
+            </div>
+          </ng-template>
+          <ng-container
+            *ngTemplateOutlet="heading1 ? heading1 : defaultHeading1"
+          ></ng-container>
+        </ng-container>
+      </h2>
+      <p class="cta1-content1 thq-body-large">
+        <ng-container>
+          <ng-template #defaultContent1>
+            <div class="cta1-fragment1">
+              <span class="cta1-text1">
+                Choose from our range of services to optimize your business
+                processes and drive growth.
+              </span>
+            </div>
+          </ng-template>
+          <ng-container
+            *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+          ></ng-container>
+        </ng-container>
+      </p>
+      <div class="cta1-actions">
+        <button class="thq-button-filled cta1-button1">
+          <span class="cta1-action1 thq-body-small">
+            <ng-container>
+              <ng-template #defaultAction1>
+                <div class="cta1-fragment3">
+                  <span class="cta1-text3">Explore Our Services</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="action1 ? action1 : defaultAction1"
+              ></ng-container>
+            </ng-container>
+          </span>
+        </button>
+        <button class="thq-button-outline cta1-button2">
+          <span class="cta1-action2 thq-body-small">
+            <ng-container>
+              <ng-template #defaultAction2>
+                <div class="cta1-fragment2">
+                  <span class="cta1-text2">Get in Touch</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="action2 ? action2 : defaultAction2"
+              ></ng-container>
+            </ng-container>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

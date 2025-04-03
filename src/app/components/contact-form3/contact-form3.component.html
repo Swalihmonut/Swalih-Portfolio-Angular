@@ -1,0 +1,115 @@
+<div class="contact-form3-contact9 thq-section-padding">
+  <div class="thq-section-max-width thq-flex-row contact-form3-max-width">
+    <img
+      [attr.alt]="imageAlt"
+      [attr.src]="imageSrc"
+      class="contact-form3-image1 thq-img-ratio-4-3"
+    />
+    <div class="contact-form3-content1 thq-flex-column">
+      <div class="contact-form3-section-title thq-card">
+        <span class="thq-body-small">
+          <ng-container>
+            <ng-template #defaultContent2>
+              <div class="contact-form3-fragment2">
+                <span class="contact-form3-text18">Get in touch with us</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="content2 ? content2 : defaultContent2"
+            ></ng-container>
+          </ng-container>
+        </span>
+        <div class="contact-form3-content2">
+          <h2 class="thq-heading-2">
+            <ng-container>
+              <ng-template #defaultHeading1>
+                <div class="contact-form3-fragment3">
+                  <span class="contact-form3-text19">Contact us</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="heading1 ? heading1 : defaultHeading1"
+              ></ng-container>
+            </ng-container>
+          </h2>
+          <span class="thq-body-small">
+            <ng-container>
+              <ng-template #defaultContent1>
+                <div class="contact-form3-fragment1">
+                  <span class="contact-form3-text17">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <span [innerHTML]="rawgm50"></span>
+                  </span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+              ></ng-container>
+            </ng-container>
+          </span>
+        </div>
+      </div>
+      <form class="thq-card">
+        <div class="contact-form3-input1">
+          <label for="contact-form-3-name" class="thq-body-small">Name</label>
+          <input
+            type="text"
+            id="contact-form-3-name"
+            placeholder="Name"
+            class="thq-input"
+          />
+        </div>
+        <div class="contact-form3-input2">
+          <label for="contact-form-3-email" class="thq-body-small">Email</label>
+          <input
+            type="email"
+            id="contact-form-3-email"
+            required="true"
+            placeholder="Email"
+            class="thq-input"
+          />
+        </div>
+        <div class="contact-form3-container">
+          <label for="contact-form-3-message" class="thq-body-small">
+            Message
+          </label>
+          <textarea
+            id="contact-form-3-message"
+            rows="3"
+            placeholder="Enter your message"
+            class="thq-input"
+          ></textarea>
+        </div>
+        <div class="contact-form3-checkbox1">
+          <input
+            type="checkbox"
+            id="contact-form-3-check"
+            checked="true"
+            required="true"
+            class="thq-checkbox"
+          />
+          <label
+            for="contact-form-3-check"
+            class="contact-form3-text16 thq-body-small"
+          >
+            I accept the Terms
+          </label>
+        </div>
+        <button type="submit" class="contact-form3-button thq-button-filled">
+          <span class="thq-body-small">
+            <ng-container>
+              <ng-template #defaultAction>
+                <div class="contact-form3-fragment4">
+                  <span class="contact-form3-text20">Submit</span>
+                </div>
+              </ng-template>
+              <ng-container
+                *ngTemplateOutlet="action ? action : defaultAction"
+              ></ng-container>
+            </ng-container>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
